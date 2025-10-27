@@ -132,7 +132,7 @@ if 'faqs' not in st.session_state:
         st.error("No FAQs extracted from PDF. Please check the file and its format.")
         logger.error("No FAQs extracted from PDF.")
     else:
-        # Generate embeddings for FAQs
+        # Generate embeddings for FAQs..
         try:
             client = AzureOpenAI(
                 azure_endpoint=AZURE_OPENAI_ENDPOINT,
